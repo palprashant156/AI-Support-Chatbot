@@ -1,0 +1,17 @@
+{
+  "name": "supportflow-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SupportFlow AI — Intelligent Customer Support Platform (modular monolith)",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "build:api": "npm run build --workspace apps/api",
+    "build:web": "npm run build --workspace apps/web",
+    "start:api": "npm run start --workspace apps/api",
+    "test:api": "npm run test --workspace apps/api",
+    "migrate": "npm run migrate --workspace apps/api",
+    "seed": "npm run seed --workspace apps/api"
+  }
+}
